@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="cyan">
+<hr width=80% size=3 color="blue" align=left>
+<h1>Website Sederhana</h1>
+<hr width=80% size=3 color="blue" align=left>
+<h3>Nama : Umaedi Rizal Febriawan</h3> 
+<h3>Nim : 191011401201</h3><br>
+<p> klik button untuk menyembunyikan semua elemen yang memiliki atribut class bernilai "kota" :</p>
+
+<button onclick="myFunction()">Sembunyikan elements</button>
+
+<h2 class="city">Jakarta</h2>
+<p>Jakarta ibu kota negara Indonesia.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris ibu kota negara Perancis.</p>
+
+<h2 class="city">Seoul</h2>
+<p>Seoul ibu kota negara Korea Selatan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
